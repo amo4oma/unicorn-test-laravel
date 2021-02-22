@@ -60,8 +60,8 @@
                 <div class="col-lg-3 hero-header">
                     <div class="strugling-header">
                         <h1 class="white font-s-40 struggling avevir">{{__(('index.Struggling with trying to not become POKAI?'))}}</h1>
-                        <p class="orang">{{__(('index.no-one-want-to be'))}}.</p>
-                        <p class="white">{{__(('index.you-are-using-most-of'))}}.<br /> {{__(('index.but-you-can'))}}</p>
+                        <p class="orang mt-5">{{__(('index.no-one-want-to be'))}}.</p>
+                        <p class="white">{{__(('index.you-are-using-most-of'))}}.<br /> <br />{{__(('index.but-you-can'))}}</p>
 
                     </div>
                     <button type="button" class="btn btn-primary avevir" onclick="slidLedGenForm()">{{__(('index.LOWER MY COMMITMENTS'))}}
@@ -218,7 +218,7 @@
 
     </section>
     <section id="debt-calculator">
-        <div class="container show-me-how-popup col-7">
+        <div class="container show-me-how-popup col-lg-7 col-sm-12">
 
             <div class="row">
                 <div class="col-lg-6 col-sm-4">
@@ -582,6 +582,39 @@
                     scrollTop: $(".popup-form-container").offset().top
                 },
                 'slow');
+
+        });
+        var screenWidth = $(window).width();
+        var swiper = new Swiper(".swiper-container", {
+
+            direction: (screenWidth < 440 ? "horizontal" : "vertical"), // change the diriction on mobile 
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+
+            loop: true,
+            slidesPerView: 6,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+
+
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: true,
+                //waitForTransition: false,
+                reverseDirection: true,
+            },
+
 
         });
     </script>

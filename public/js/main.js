@@ -94,38 +94,7 @@ window.onload = function () {
   }, 2000);
 };
 
-var swiper = new Swiper(".swiper-container", {
-
-  direction: "vertical",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  
-  loop: true,
-  slidesPerView: 6,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  
-
-  autoplay: {
-    delay: 1500,
-  disableOnInteraction: true,
-  //waitForTransition: false,
-  reverseDirection: true,
-  },
-  
  
-});
  
 
 
